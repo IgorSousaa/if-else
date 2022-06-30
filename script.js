@@ -19,9 +19,19 @@ if((mes === "Janeiro") || (mes === "Dezembro")){
     console.log("Faz aniversário em Dezembro");
 }
 
-let primeiraLetra = true;
-if(primeiraLetra){
-    console.log("Apenas nomes que começam com R");
+
+let nome = "Luan";
+
+// Esse charAt(0) verifica a primeira letra no nome
+if(nome.charAt(0) === "R"){
+    console.log(nome, "seu nome começa com a letra R");
+}
+
+let sobreNome = "Silva";
+
+// esse length verificar a quantidade de letras
+if( (sobreNome.length >= 6) || (nome.charAt(0) === "E") ){
+    console.log(`Seu sobrenome: ${sobreNome} tem +6 letras ou começa com a letra E`);
 }else{
-    console.log("Infelizmente seu nome não começa com R.");
+    console.log(`Seu sobrenome: ${sobreNome} não tem +6 letras ou não começa com a letra E`)
 }
